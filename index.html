@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Pedreira Cachoeira do Sul — fornecimento de materiais britados de granito para obras, pavimentação e construção civil." />
+  <title>Pedreira Cachoeira do Sul</title>
+  <link rel="icon" href="assets/images/logo-azul.jpeg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="#inicio" aria-label="Pedreira Cachoeira do Sul">
+        <img src="assets/images/logo-branca.jpeg" alt="Logo Pedreira Cachoeira do Sul" />
+      </a>
+      <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+      <nav class="menu">
+        <a href="#empresa">Empresa</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#estrutura">Estrutura</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <span class="eyebrow">GRANITO BRITADO • CACHOEIRA DO SUL/RS</span>
+        <h1>Materiais para obras que exigem qualidade, regularidade e capacidade de entrega.</h1>
+        <p>Fornecimento de agregados de granito para pavimentação, infraestrutura, concreto e construção civil.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#contato">Solicitar orçamento</a>
+          <a class="btn secondary" href="#produtos">Conhecer produtos</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="empresa" class="section">
+      <div class="container grid-2">
+        <div>
+          <span class="section-tag">A EMPRESA</span>
+          <h2>Produção mineral voltada ao atendimento de obras públicas e privadas.</h2>
+        </div>
+        <div>
+          <p>A Pedreira Cachoeira do Sul atua no beneficiamento e fornecimento de materiais britados de granito, atendendo construtoras, concreteiras, órgãos públicos, produtores rurais e clientes particulares.</p>
+          <p>O site foi estruturado para receber fotografias reais da operação, vídeos de drone, catálogos de produtos e informações comerciais atualizadas.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="produtos" class="section section-alt">
+      <div class="container">
+        <span class="section-tag">PRODUTOS</span>
+        <h2>Materiais britados para diferentes aplicações</h2>
+        <div class="cards">
+          <article class="card">
+            <div class="image-placeholder">FOTO DO PRODUTO</div>
+            <h3>Brita graduada</h3>
+            <p>Aplicação em bases e sub-bases de pavimentos, acessos e plataformas.</p>
+          </article>
+          <article class="card">
+            <div class="image-placeholder">FOTO DO PRODUTO</div>
+            <h3>Brita 0 e Brita 1</h3>
+            <p>Indicadas para concreto, pavimentação, drenagem e construção civil.</p>
+          </article>
+          <article class="card">
+            <div class="image-placeholder">FOTO DO PRODUTO</div>
+            <h3>Pó de pedra</h3>
+            <p>Utilizado em assentamentos, regularizações, pavimentação e fabricação de artefatos.</p>
+          </article>
+          <article class="card">
+            <div class="image-placeholder">FOTO DO PRODUTO</div>
+            <h3>Rachão e materiais especiais</h3>
+            <p>Soluções para drenagem, reforço de base, contenções e obras de grande porte.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="estrutura" class="section">
+      <div class="container grid-2 media-grid">
+        <div class="video-placeholder">
+          <span>ESPAÇO PARA VÍDEO DE DRONE OU OPERAÇÃO</span>
+        </div>
+        <div>
+          <span class="section-tag">ESTRUTURA E LOGÍSTICA</span>
+          <h2>Operação preparada para atender diferentes volumes e demandas.</h2>
+          <p>Esta área poderá apresentar a planta de britagem, equipamentos, estoques, balança, carregamento e logística de expedição.</p>
+          <ul class="checklist">
+            <li>Produção de agregados de granito</li>
+            <li>Estoque organizado por produto</li>
+            <li>Carregamento e expedição</li>
+            <li>Atendimento comercial por WhatsApp</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="galeria" class="section section-dark">
+      <div class="container">
+        <span class="section-tag light">GALERIA</span>
+        <h2>Conheça a operação</h2>
+        <div class="gallery">
+          <div class="gallery-item">VISTA AÉREA</div>
+          <div class="gallery-item">BRITAGEM</div>
+          <div class="gallery-item">CARREGAMENTO</div>
+          <div class="gallery-item">ESTOQUES</div>
+          <div class="gallery-item">PRODUTOS</div>
+          <div class="gallery-item">FROTA E LOGÍSTICA</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="section contact">
+      <div class="container grid-2">
+        <div>
+          <span class="section-tag">CONTATO</span>
+          <h2>Solicite orçamento para sua obra.</h2>
+          <p>Informe o tipo de material, volume estimado, endereço de entrega e prazo desejado.</p>
+        </div>
+        <form class="contact-form" onsubmit="return enviarWhatsApp(event)">
+          <label>Nome ou empresa
+            <input id="nome" type="text" required />
+          </label>
+          <label>Material
+            <input id="material" type="text" placeholder="Ex.: Brita 1, pó de pedra, rachão" required />
+          </label>
+          <label>Quantidade estimada
+            <input id="quantidade" type="text" placeholder="Ex.: 100 toneladas" />
+          </label>
+          <label>Município da entrega
+            <input id="cidade" type="text" />
+          </label>
+          <button class="btn primary full" type="submit">Enviar pedido pelo WhatsApp</button>
+          <small>Antes de publicar, substitua o número do WhatsApp no arquivo <strong>script.js</strong>.</small>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <img src="assets/images/logo-branca.jpeg" alt="Pedreira Cachoeira do Sul" />
+      <p>© <span id="ano"></span> Pedreira Cachoeira do Sul. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

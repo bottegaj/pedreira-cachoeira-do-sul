@@ -1,0 +1,1 @@
+Coloque nesta pasta as fotografias do site. Para o banner principal, use o nome banner-principal.jpg.
