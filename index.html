@@ -115,31 +115,89 @@
       </div>
     </section>
 
-    <section id="contato" class="section contact">
-      <div class="container grid-2">
-        <div>
-          <span class="section-tag">CONTATO</span>
-          <h2>Solicite orçamento para sua obra.</h2>
-          <p>Informe o tipo de material, volume estimado, endereço de entrega e prazo desejado.</p>
+   <section id="contato" class="section contact">
+  <div class="container">
+    <div class="grid-2">
+      <div>
+        <span class="section-tag">CONTATO</span>
+        <h2>Solicite orçamento para sua obra.</h2>
+
+        <p>
+          Informe o tipo de material, volume estimado, endereço de entrega
+          e prazo desejado.
+        </p>
+
+        <div class="contact-details">
+          <p>
+            <strong>E-mail:</strong><br>
+            <a href="mailto:pedreira.cachoeiradosul@gmail.com">
+              pedreira.cachoeiradosul@gmail.com
+            </a>
+          </p>
+
+          <p>
+            <strong>Localização:</strong><br>
+            Pedreira Cachoeira do Sul — Cachoeira do Sul/RS
+          </p>
+
+          <a
+            class="btn primary"
+            href="https://www.google.com/maps/dir/?api=1&destination=-30.344704,-52.7470537"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Como chegar
+          </a>
         </div>
-        <form class="contact-form" onsubmit="return enviarWhatsApp(event)">
-          <label>Nome ou empresa
-            <input id="nome" type="text" required />
-          </label>
-          <label>Material
-            <input id="material" type="text" placeholder="Ex.: Brita 1, pó de pedra, rachão" required />
-          </label>
-          <label>Quantidade estimada
-            <input id="quantidade" type="text" placeholder="Ex.: 100 toneladas" />
-          </label>
-          <label>Município da entrega
-            <input id="cidade" type="text" />
-          </label>
-          <button class="btn primary full" type="submit">Enviar pedido pelo WhatsApp</button>
-          <small>Antes de publicar, substitua o número do WhatsApp no arquivo <strong>script.js</strong>.</small>
-        </form>
       </div>
-    </section>
+
+      <form class="contact-form" onsubmit="return enviarWhatsApp(event)">
+        <label>
+          Nome ou empresa
+          <input id="nome" type="text" required>
+        </label>
+
+        <label>
+          Material
+          <input
+            id="material"
+            type="text"
+            placeholder="Ex.: Brita 1, pó de pedra, rachão"
+            required
+          >
+        </label>
+
+        <label>
+          Quantidade estimada
+          <input
+            id="quantidade"
+            type="text"
+            placeholder="Ex.: 100 toneladas"
+          >
+        </label>
+
+        <label>
+          Município da entrega
+          <input id="cidade" type="text">
+        </label>
+
+        <button class="btn primary full" type="submit">
+          Enviar pedido pelo WhatsApp
+        </button>
+      </form>
+    </div>
+
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps?q=-30.344704,-52.7470537&output=embed"
+        title="Localização da Pedreira Cachoeira do Sul"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </div>
+</section>
   </main>
 
   <footer>
