@@ -13,7 +13,7 @@ function enviarWhatsApp(event) {
 
   // TROQUE PELO NÚMERO COM DDD E CÓDIGO DO PAÍS, SOMENTE NÚMEROS.
   // Exemplo: 5551999999999
- const numeroWhatsApp = '5551998586743';
+const numeroWhatsApp = '5551995922270';
 
   const nome = document.getElementById('nome').value.trim();
   const material = document.getElementById('material').value.trim();
